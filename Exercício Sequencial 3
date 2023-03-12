@@ -1,0 +1,26 @@
+Faça um algoritmo que receba um número positivo, calcule e mostre: 
+• o número ao cubo; 
+• a raiz quadrada do número;  
+• a raiz cúbica do número; 
+• o seno do número; 
+• o cosseno do número. 
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  float numpos, rescub, raizqua, raizcub, sen, cos;
+  printf("Digite o número desejado:\n");
+  scanf("%f", &numpos);
+    rescub = numpos*numpos*numpos;
+    raizqua =  (sqrt(numpos));
+    raizcub =  pow(numpos, 1.0 / 3.0);
+    sen = sin(numpos);
+    cos = cos(numpos);
+    
+
+  //Resultados
+  printf("Resultados:\n Número ao cubo é igual a: %f\n Raiz quadrada do número é igual a: %f\n Raiz cúbica do número é igual a : %f\n O seno do número é igual a: %f\n O cosseno do número é igual a: %f\n", rescub, raizqua, raizcub, sen, cos);
+   
+  return 0;
+}
