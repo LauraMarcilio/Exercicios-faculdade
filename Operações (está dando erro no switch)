@@ -1,0 +1,37 @@
+/* Faça  um  programa  que  mostre  o  menu  de  opções  a  seguir,  receba  a  opção  do  usuário  e  os  dados  necessários 
+para executar cada operação. 
+Menu de opções: 
+1. Somar dois números. 
+2. Raiz quadrada de um número. 
+Digite a opção desejada: 
+*/
+ 
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  char op;
+  int aux, soma1, soma2, resoma;
+  float num, raiz, resraiz;
+  printf("Opção 1: Somar dois números\n Opção 2: Raiz quadrada de um número\n Digite 1 ou 2 para a opção desejada.");
+  switch (op) {
+    case '1':
+      printf("Digite os números para serem somados\n");
+      scanf("%d %d", &soma1, &soma2);
+      resoma = soma1+soma2;
+      printf("Resultado da soma de %d %d = %d", soma1, soma2, resoma);
+    return 0;
+    case '2':
+      printf("Digite um número para tirarmos a raiz dele\n");
+      scanf("%f", &num);
+      resraiz =  sqrt(sqrt(num));
+      printf("Raiz quadrada de %f é igual a %f", num, resraiz);
+    return 0;
+    default:
+      printf("erro");
+    return 0;
+    //está dand erro no case pq ele está imcompativel, eu coloquei em char
+    
+  }
+  return 0;
+}
